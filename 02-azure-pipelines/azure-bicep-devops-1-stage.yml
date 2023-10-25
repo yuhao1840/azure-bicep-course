@@ -6,7 +6,7 @@ trigger: none
 variables:
   resourceGroupName: 'rg-containerapps-azure-pipelines'
   location: 'eastus'
-  webAppName: 'bicep0017'
+  webAppName: 'hyu-bicep'
   templateFile: '01-bicep-webapp/webapp-linux.bicep'
 
 pool:
