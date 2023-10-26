@@ -5,8 +5,8 @@ trigger: none
 
 variables:
   resourceGroupName: 'rg-bicep-demo-0023'
-  location: 'westeurope'
-  webAppName: 'bicep0023'
+  location: 'eastus'
+  webAppName: 'hyu-bicep0023'
   templateFile: '01-bicep-webapp/webapp-linux.bicep'
 
 pool:
@@ -62,7 +62,7 @@ stages:
     - task: ManualValidation@0
       timeoutInMinutes: 1440 # task times out in 1 day
       inputs:
-        notifyUsers: 'houssem.dellai@live.com'
+        notifyUsers: 'hao_yu@ao.uscourts.gov'
         instructions: 'Please validate the build $(Build.BuildId) configuration and resume'
         onTimeout: 'resume'
 
